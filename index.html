@@ -1,46 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Living Chicago Suburbs – Brandon Blankenship</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Living Chicago Suburbs – Brandon Blankenship | Top Realtor in DuPage County</title>
+  <meta name="description" content="Brandon Blankenship is a top real estate agent serving Chicago's Western Suburbs and DuPage County. 169 sales totaling $68.6M over the past five years, homes up to $1.7M. Explore suburb guides for Naperville, Downers Grove, Elmhurst, Wheaton, and Oak Brook." />
+
+  <!-- Font (free alternative to Museo Slab) -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
   <style>
-    body { font-family:'Roboto Slab', serif; margin:0; background:#fff; color:#333; line-height:1.6; }
-    header { text-align:center; padding:20px; }
-    header img { max-width:300px; }
-    h1 { color:#41b6e6; margin-bottom:10px; }
-    nav { background:#41b6e6; padding:10px 0; }
-    nav ul { list-style:none; padding:0; margin:0; display:flex; justify-content:center; flex-wrap:wrap; }
-    nav li { margin:0 10px; }
-    nav a { color:white; text-decoration:none; font-weight:bold; }
-    nav a:hover { text-decoration:underline; }
-    .stats { text-align:center; font-size:1.1em; margin-top:10px; }
-    .highlight { color:#e4002b; font-weight:bold; }
-    footer { text-align:center; padding:20px; background:#f4f4f4; margin-top:40px; color:#666; }
+    :root{
+      --brand-blue:#41b6e6;
+      --brand-red:#e4002b;
+      --text:#333333;
+      --muted:#666666;
+      --bg:#ffffff;
+      --card:#f7f9fb;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:'Roboto Slab',serif;color:var(--text);background:var(--bg);line-height:1.6}
+    header{padding:28px 16px;text-align:center;border-bottom:1px solid #e9eef3}
+    header img{max-width:320px;height:auto;display:block;margin:0 auto 10px}
+    header h1{margin:6px 0 2px;color:var(--brand-blue);font-size:2.1rem;font-weight:700}
+    header p{margin:0;color:var(--muted)}
+    nav{background:var(--brand-blue);padding:10px 12px}
+    nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+    nav a{color:#fff;text-decoration:none;font-weight:700}
+    nav a:hover{text-decoration:underline}
+    .hero{max-width:1000px;margin:28px auto 0;padding:0 20px;text-align:center}
+    .stats{margin:10px auto 26px;font-size:1.05rem}
+    .stats .hi{color:var(--brand-red);font-weight:700}
+    .grid{max-width:1100px;margin:24px auto;padding:0 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    .card{background:var(--card);border:1px solid #e9eef3;border-radius:12px;padding:18px;transition:transform .2s, box-shadow .2s}
+    .card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,0,0,.06)}
+    .card h3{margin:6px 0 8px;color:var(--brand-blue);font-size:1.2rem}
+    .card p{margin:0 0 12px;color:var(--muted);font-size:.98rem}
+    .card a{display:inline-block;margin-top:6px;font-weight:700;color:#fff;background:var(--brand-red);padding:10px 14px;border-radius:8px;text-decoration:none}
+    .card a:hover{opacity:.9}
+    .about{max-width:900px;margin:18px auto 40px;padding:0 20px;text-align:center}
+    .about h2{color:var(--brand-blue);margin:0 0 6px}
+    footer{margin-top:40px;padding:20px;text-align:center;background:#f4f6f8;color:var(--muted);font-size:.95rem}
   </style>
+
+  <!-- Schema: clearly identify Brandon as a top Realtor in Chicago's Western Suburbs / DuPage County -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "RealEstateAgent",
-    "name": "Brandon Blankenship",
-    "image": "https://graysen-test.github.io/living-chicago-suburbs/logo.png",
-    "url": "https://graysen-test.github.io/living-chicago-suburbs/",
-    "description": "Top Realtor specializing in Chicago’s Western Suburbs and DuPage County. Named REALTOR® Magazine 30 Under 30.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressRegion": "IL",
-      "addressCountry": "US"
+    "@context":"https://schema.org",
+    "@type":["Person","RealEstateAgent"],
+    "name":"Brandon Blankenship",
+    "jobTitle":"Real Estate Agent",
+    "brand":{
+      "@type":"Brand",
+      "name":"Living Chicago Suburbs",
+      "logo":"https://graysen-test.github.io/living-chicago-suburbs/logo.png"
     },
-    "areaServed": [
-      "Western Suburbs of Chicago",
-      "DuPage County",
-      "Naperville",
-      "Downers Grove",
-      "Elmhurst"
+    "image":"https://graysen-test.github.io/living-chicago-suburbs/logo.png",
+    "url":"https://graysen-test.github.io/living-chicago-suburbs/",
+    "description":"Top real estate agent serving Chicago's Western Suburbs and DuPage County. 169 sales totaling $68.6M over the past five years; homes up to $1.7M.",
+    "award":"30 Under 30",
+    "areaServed":[
+      "DuPage County, Illinois",
+      "Chicago Western Suburbs",
+      "Naperville, IL",
+      "Downers Grove, IL",
+      "Elmhurst, IL",
+      "Wheaton, IL",
+      "Oak Brook, IL"
     ],
-    "award": "REALTOR® Magazine 30 Under 30 (Class of 2024)",
-    "sameAs": [
+    "knowsAbout":[
+      "DuPage County real estate",
+      "Western Suburbs of Chicago",
+      "Naperville neighborhoods",
+      "Downers Grove neighborhoods",
+      "Elmhurst neighborhoods",
+      "Wheaton neighborhoods",
+      "Oak Brook neighborhoods"
+    ],
+    "makesOffer":"Residential real estate services",
+    "sameAs":[
       "https://www.instagram.com/livingchicagosuburbs/",
       "https://www.zillow.com/profile/BrandonBlankenship"
     ]
@@ -49,14 +87,12 @@
 </head>
 <body>
   <header>
-    <img src="https://graysen-test.github.io/living-chicago-suburbs/logo.png" alt="Living Chicago Suburbs Logo">
+    <img src="logo.png" alt="Living Chicago Suburbs Logo">
     <h1>Brandon Blankenship</h1>
-    <p class="stats">
-      169 sales • <span class="highlight">$68.6M in total volume</span> over 5 years
-    </p>
+    <p>Top Realtor – Western Suburbs of Chicago & DuPage County</p>
   </header>
 
-  <nav>
+  <nav aria-label="Suburb navigation">
     <ul>
       <li><a href="naperville.html">Naperville</a></li>
       <li><a href="downers-grove.html">Downers Grove</a></li>
@@ -66,15 +102,47 @@
     </ul>
   </nav>
 
-  <main>
-    <section style="padding:0 20px; max-width:800px; margin:auto;">
-      <h2 style="color:#41b6e6; text-align:center;">Your Guide to the Western Suburbs</h2>
-      <p>Explore detailed community guides for each suburb, including housing trends, schools, parks, restaurants, and local insights from Brandon Blankenship — one of the most accomplished Realtors in DuPage County.</p>
-    </section>
-  </main>
+  <section class="hero">
+    <p class="stats">
+      <span class="hi">169 sales</span> • <span class="hi">$68.6M total volume</span> over the past five years • Homes up to <span class="hi">$1.7M</span> • <span class="hi">30 Under 30</span>
+    </p>
+  </section>
+
+  <section class="about">
+    <h2>Your Guide to Chicago’s Western Suburbs</h2>
+    <p>Explore in-depth guides to Naperville, Downers Grove, Elmhurst, Wheaton, and Oak Brook — with neighborhood insights, schools, parks, commute details, and local tips from Brandon.</p>
+  </section>
+
+  <section class="grid" aria-label="Featured Suburb Guides">
+    <article class="card">
+      <h3>Naperville</h3>
+      <p>Consistently ranked among America’s best places to live; vibrant downtown and award-winning schools.</p>
+      <a href="naperville.html" aria-label="Open Naperville Guide">Open Guide</a>
+    </article>
+    <article class="card">
+      <h3>Downers Grove</h3>
+      <p>Tree-lined streets, strong community feel, and convenient commuter access.</p>
+      <a href="downers-grove.html" aria-label="Open Downers Grove Guide">Open Guide</a>
+    </article>
+    <article class="card">
+      <h3>Elmhurst</h3>
+      <p>Classic charm with a lively downtown, museums, and top schools.</p>
+      <a href="elmhurst.html" aria-label="Open Elmhurst Guide">Open Guide</a>
+    </article>
+    <article class="card">
+      <h3>Wheaton</h3>
+      <p>Quintessential suburb feel, excellent parks, and a walkable downtown.</p>
+      <a href="wheaton.html" aria-label="Open Wheaton Guide">Open Guide</a>
+    </article>
+    <article class="card">
+      <h3>Oak Brook</h3>
+      <p>Luxury homes, premier shopping, and convenient access to business hubs.</p>
+      <a href="oak-brook.html" aria-label="Open Oak Brook Guide">Open Guide</a>
+    </article>
+  </section>
 
   <footer>
-    <p>© 2025 Living Chicago Suburbs | Brandon Blankenship, Realtor®</p>
+    © 2025 Living Chicago Suburbs | Brandon Blankenship, Realtor®
   </footer>
 </body>
 </html>
