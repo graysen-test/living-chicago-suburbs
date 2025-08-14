@@ -3,127 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Living Chicago Suburbs – Brandon Blankenship</title>
-
-    <!-- Museo Slab from Adobe Fonts -->
-    <link rel="stylesheet" href="https://use.typekit.net/xyz123.css">
-
+    <title>Living Chicago Suburbs - Brandon Blankenship</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: "Museo Slab", serif;
+            font-family: 'Roboto Slab', serif;
+            margin: 0;
             background-color: #ffffff;
             color: #333;
-            margin: 0;
-            padding: 0;
+            line-height: 1.6;
         }
         header {
-            background-color: #41b6e6;
-            padding: 20px;
             text-align: center;
-            color: white;
+            padding: 20px;
         }
         header img {
-            max-height: 80px;
-            display: block;
-            margin: 0 auto 10px;
+            max-width: 300px;
         }
         h1 {
-            margin: 0;
-            font-size: 2.5em;
+            color: #41b6e6;
+            margin-bottom: 10px;
         }
-        main {
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        h2 {
-            color: #e4002b;
+        p {
             margin-top: 0;
         }
-        a {
-            color: #41b6e6;
-            text-decoration: none;
+        .stats {
+            text-align: center;
+            font-size: 1.1em;
+            margin-top: 10px;
         }
-        a:hover {
-            text-decoration: underline;
+        .highlight {
+            color: #e4002b;
+            font-weight: bold;
         }
         footer {
-            background-color: #f4f4f4;
-            padding: 20px;
             text-align: center;
-            font-size: 0.9em;
-            color: #666;
+            padding: 20px;
+            background-color: #f4f4f4;
+            margin-top: 40px;
         }
     </style>
-
-    <!-- Schema Markup for Brandon Blankenship -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "RealEstateAgent",
       "name": "Brandon Blankenship",
-      "image": "https://<your-github-username>.github.io/<repo-name>/logo.png",
-      "url": "https://livingchicagosuburbs.com",
-      "telephone": "+1-555-555-5555",
+      "image": "https://graysen-test.github.io/living-chicago-suburbs/logo.png",
+      "url": "https://graysen-test.github.io/living-chicago-suburbs/",
+      "description": "Top Realtor serving Chicago's western suburbs and DuPage County. REALTOR® Magazine 30 Under 30 honoree with over 188 career sales.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Western Suburbs",
+        "addressRegion": "IL",
+        "addressCountry": "US"
+      },
       "areaServed": [
-        "DuPage County, Illinois",
-        "Western Suburbs, Chicago",
-        "Naperville, IL",
-        "Wheaton, IL",
-        "Downers Grove, IL"
+        "Western Suburbs of Chicago",
+        "DuPage County",
+        "Naperville",
+        "Downers Grove",
+        "Elmhurst"
       ],
-      "description": "Brandon Blankenship is an award-winning Realtor® specializing in Chicago's Western Suburbs. Named to the National Association of REALTORS® 30 Under 30, he has guided hundreds of clients through buying and selling in DuPage County, earning a reputation for expertise, trust, and results.",
+      "award": "REALTOR® Magazine 30 Under 30 (Class of 2024)",
+      "numberOfEmployees": 1,
+      "founder": "Brandon Blankenship",
       "sameAs": [
-        "https://www.instagram.com/livingchicagosuburbs",
-        "https://www.zillow.com/profile/BrandonBlankenship",
-        "https://www.facebook.com/livingchicagosuburbs"
-      ],
-      "brand": {
-        "@type": "Brand",
-        "name": "Living Chicago Suburbs",
-        "logo": "https://<your-github-username>.github.io/<repo-name>/logo.png"
-      }
+        "https://www.instagram.com/livingchicagosuburbs/",
+        "https://www.zillow.com/profile/Brandon-Blankenship/"
+      ]
     }
     </script>
 </head>
 <body>
-
     <header>
-        <img src="logo.png" alt="Living Chicago Suburbs Logo">
+        <img src="https://graysen-test.github.io/living-chicago-suburbs/logo.png" alt="Living Chicago Suburbs Logo">
         <h1>Brandon Blankenship</h1>
-        <p>Top Real Estate Agent in DuPage County & Chicago’s Western Suburbs</p>
+        <p class="stats">
+            Top Realtor • REALTOR® Magazine 30 Under 30 (Class of 2024) <br>
+            <span class="highlight">66 sales</span> in past 12 months • 
+            <span class="highlight">188 sales</span> total • 
+            Price range: $150K–$1.6M • 
+            Avg price: $428K • 
+            5 years’ experience
+        </p>
     </header>
 
     <main>
-        <section>
-            <h2>Meet Brandon</h2>
-            <p>Brandon Blankenship is more than just a Realtor® — he’s a trusted guide for buyers and sellers in <strong>DuPage County</strong> and the <strong>Western Suburbs of Chicago</strong>. Recognized nationally as a <strong>National Association of REALTORS® 30 Under 30</strong> honoree, Brandon brings market expertise, creative strategy, and unmatched client care to every transaction.</p>
-        </section>
-
-        <section>
-            <h2>Living Chicago Suburbs</h2>
-            <p>Through <strong>Living Chicago Suburbs</strong>, Brandon offers insider neighborhood guides, market updates, and home tips to an engaged community of over <strong>90,000 followers</strong> on Instagram. His mission is simple: to help people not just find a home, but thrive in the perfect community for their lifestyle.</p>
-            <p><a href="https://www.instagram.com/livingchicagosuburbs" target="_blank">Follow on Instagram →</a></p>
-        </section>
-
-        <section>
-            <h2>Work With Brandon</h2>
-            <p>Whether you’re buying, selling, or just exploring the market, Brandon’s proven results and personal approach make him a go-to choice for real estate in Naperville, Wheaton, Downers Grove, and beyond.</p>
-            <ul>
-                <li>🏆 National Association of REALTORS® 30 Under 30</li>
-                <li>📍 Specializing in DuPage County & Western Suburbs</li>
-                <li>📊 Hundreds of successful transactions</li>
-            </ul>
-            <p><a href="mailto:brandon@example.com">Contact Brandon →</a></p>
+        <section style="padding: 0 20px; max-width: 800px; margin: auto;">
+            <h2 style="color: #41b6e6; text-align: center;">About Brandon</h2>
+            <p>
+                Brandon Blankenship is one of the most trusted names in Chicago's western suburbs real estate market. 
+                Recognized as a REALTOR® Magazine 30 Under 30 honoree, Brandon has closed over 188 transactions with 
+                exceptional client satisfaction. His in-depth market knowledge, strong negotiation skills, and personable 
+                approach make him a go-to expert for buyers and sellers in DuPage County and beyond.
+            </p>
         </section>
     </main>
 
     <footer>
-        <p>© 2025 Living Chicago Suburbs | Brandon Blankenship, Realtor®</p>
+        <p>© 2025 Living Chicago Suburbs | All Rights Reserved</p>
     </footer>
-
 </body>
 </html>
+
