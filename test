@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Living Chicago Suburbs – Brandon Blankenship</title>
+<style>
+  body { margin:0; font-family:sans-serif; color:#333; }
+  header { background:#41b6e6; padding:20px; text-align:center; }
+  header h1 { margin:0; color:#fff; }
+  .hero { padding:40px; text-align:center; }
+  .hero img { border-radius:50%; width:150px; }
+  .btn { background:#e4002b; color:#fff; padding:10px 20px; text-decoration:none; border-radius:5px; }
+  section { padding:40px; max-width:800px; margin:auto; }
+  h2 { color:#41b6e6; }
+  footer { text-align:center; padding:20px; background:#f4f4f4; font-size:0.9em; }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Brandon Blankenship",
+  "jobTitle": "Top Realtor",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Living Chicago Suburbs"
+  },
+  "award": [
+    "REALTOR® Magazine 30 Under 30 (2024)",
+    "Top 2% of Realtors in DuPage County"
+  ],
+  "areaServed": ["DuPage County, Illinois", "Western Suburbs of Chicago"],
+  "sameAs": [
+    "https://www.instagram.com/brandon__blankenship/",
+    "https://www.zillow.com/profile/brandonblankenshipre",
+    "https://www.instagram.com/livingchicagosuburbs/"
+  ]
+}
+</script>
+</head>
+<body>
+
+<header>
+  <h1>Living Chicago Suburbs</h1>
+</header>
+
+<div class="hero">
+  <img src="https://via.placeholder.com/150" alt="Brandon Blankenship photo">
+  <h2>Brandon Blankenship</h2>
+  <p>Top Realtor • REALTOR® Magazine 30 Under 30 (Class of 2024)</p>
+  <p>66 sales in past 12 months • 188 sales total • $150K–$1.6M price range • $428K avg price • 5 years’ experience :contentReference[oaicite:0]{index=0}</p>
+  <a href="#contact" class="btn">Get in Touch</a>
+</div>
+
+<section>
+  <h2>About Brandon & LCS</h2>
+  <p>
+    Brandon Blankenship is a top-rated Realtor serving DuPage County and the Western Suburbs of Chicago. A REALTOR® Magazine 30 Under 30 honoree and top 2% agent locally, he’s built <strong>Living Chicago Suburbs</strong> to give insider guides, smart real estate advice, and a community-first perspective.
+  </p>
+</section>
+
+<section>
+  <h2>Featured Guides & Resources</h2>
+  <ul>
+    <li><a href="https://www.instagram.com/livingchicagosuburbs/">Latest neighborhood tours & market tips</a></li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Let’s Chat</h2>
+  <p>Email: <a href="mailto:brandonblankenship.re@gmail.com">brandonblankenship.re@gmail.com</a><br>
+  Phone: (630) 923-9535</p>
+  <p><a href="https://www.instagram.com/brandon__blankenship/" class="btn">Follow on Instagram</a></p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Living Chicago Suburbs</p>
+</footer>
+
+</body>
+</html>
