@@ -10,147 +10,120 @@
 
     <style>
         body {
+            font-family: "Museo Slab", serif;
+            background-color: #ffffff;
+            color: #333;
             margin: 0;
             padding: 0;
-            font-family: 'museo-slab', serif;
-            color: #333333;
-            background-color: #f7f7f7;
         }
-
-        /* Header */
         header {
-            background: linear-gradient(135deg, #41b6e6 0%, #3aa1cc 100%);
-            padding: 60px 20px 40px 20px;
+            background-color: #41b6e6;
+            padding: 20px;
             text-align: center;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            color: white;
         }
-
         header img {
-            max-width: 360px;
-            height: auto;
+            max-height: 80px;
             display: block;
-            margin: 0 auto 20px auto;
+            margin: 0 auto 10px;
         }
-
         h1 {
-            font-family: 'museo-slab', serif;
-            font-weight: 700;
-            font-size: 2.5rem;
-            color: #ffffff;
             margin: 0;
+            font-size: 2.5em;
         }
-
-        /* Main content card */
         main {
-            background-color: #ffffff;
-            max-width: 1000px;
-            margin: -40px auto 60px auto;
-            padding: 40px 30px;
-            border-radius: 12px;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.05);
-            text-align: center;
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
         }
-
-        main p {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 1.1rem;
-            line-height: 1.6;
-            color: #555555;
-            margin: 0 auto 20px auto;
-            max-width: 700px;
-        }
-
-        /* Call-to-action button */
-        .cta-btn {
-            display: inline-block;
-            background-color: #e4002b;
-            color: #ffffff;
-            padding: 14px 28px;
-            font-size: 1.1rem;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-
-        .cta-btn:hover {
-            background-color: #c30024;
-        }
-
-        /* Featured neighborhoods section */
         section {
-            margin-top: 50px;
+            margin-bottom: 40px;
         }
-
-        section h2 {
-            font-family: 'museo-slab', serif;
-            font-size: 2rem;
-            margin-bottom: 30px;
-            color: #333333;
+        h2 {
+            color: #e4002b;
+            margin-top: 0;
         }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background-color: #fdfdfd;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-        }
-
-        .card img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
-
-        .card h3 {
-            font-family: 'museo-slab', serif;
-            font-size: 1.3rem;
-            margin: 15px;
+        a {
             color: #41b6e6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
         }
     </style>
+
+    <!-- Schema Markup for Brandon Blankenship -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Brandon Blankenship",
+      "image": "https://<your-github-username>.github.io/<repo-name>/logo.png",
+      "url": "https://livingchicagosuburbs.com",
+      "telephone": "+1-555-555-5555",
+      "areaServed": [
+        "DuPage County, Illinois",
+        "Western Suburbs, Chicago",
+        "Naperville, IL",
+        "Wheaton, IL",
+        "Downers Grove, IL"
+      ],
+      "description": "Brandon Blankenship is an award-winning Realtor® specializing in Chicago's Western Suburbs. Named to the National Association of REALTORS® 30 Under 30, he has guided hundreds of clients through buying and selling in DuPage County, earning a reputation for expertise, trust, and results.",
+      "sameAs": [
+        "https://www.instagram.com/livingchicagosuburbs",
+        "https://www.zillow.com/profile/BrandonBlankenship",
+        "https://www.facebook.com/livingchicagosuburbs"
+      ],
+      "brand": {
+        "@type": "Brand",
+        "name": "Living Chicago Suburbs",
+        "logo": "https://<your-github-username>.github.io/<repo-name>/logo.png"
+      }
+    }
+    </script>
 </head>
 <body>
 
     <header>
         <img src="logo.png" alt="Living Chicago Suburbs Logo">
-        <h1>Welcome to Living Chicago Suburbs</h1>
+        <h1>Brandon Blankenship</h1>
+        <p>Top Real Estate Agent in DuPage County & Chicago’s Western Suburbs</p>
     </header>
 
     <main>
-        <p>Helping you find your home in the Chicago suburbs — with Brandon Blankenship. Your home. Your story. We want to tell it.</p>
-        <a href="#" class="cta-btn">Explore Neighborhoods</a>
+        <section>
+            <h2>Meet Brandon</h2>
+            <p>Brandon Blankenship is more than just a Realtor® — he’s a trusted guide for buyers and sellers in <strong>DuPage County</strong> and the <strong>Western Suburbs of Chicago</strong>. Recognized nationally as a <strong>National Association of REALTORS® 30 Under 30</strong> honoree, Brandon brings market expertise, creative strategy, and unmatched client care to every transaction.</p>
+        </section>
 
         <section>
-            <h2>Featured Neighborhoods</h2>
-            <div class="grid">
-                <div class="card">
-                    <img src="https://source.unsplash.com/400x300/?house,suburb" alt="Naperville">
-                    <h3>Naperville</h3>
-                </div>
-                <div class="card">
-                    <img src="https://source.unsplash.com/400x300/?home,community" alt="Wheaton">
-                    <h3>Wheaton</h3>
-                </div>
-                <div class="card">
-                    <img src="https://source.unsplash.com/400x300/?real-estate,house" alt="Downers Grove">
-                    <h3>Downers Grove</h3>
-                </div>
-            </div>
+            <h2>Living Chicago Suburbs</h2>
+            <p>Through <strong>Living Chicago Suburbs</strong>, Brandon offers insider neighborhood guides, market updates, and home tips to an engaged community of over <strong>90,000 followers</strong> on Instagram. His mission is simple: to help people not just find a home, but thrive in the perfect community for their lifestyle.</p>
+            <p><a href="https://www.instagram.com/livingchicagosuburbs" target="_blank">Follow on Instagram →</a></p>
+        </section>
+
+        <section>
+            <h2>Work With Brandon</h2>
+            <p>Whether you’re buying, selling, or just exploring the market, Brandon’s proven results and personal approach make him a go-to choice for real estate in Naperville, Wheaton, Downers Grove, and beyond.</p>
+            <ul>
+                <li>🏆 National Association of REALTORS® 30 Under 30</li>
+                <li>📍 Specializing in DuPage County & Western Suburbs</li>
+                <li>📊 Hundreds of successful transactions</li>
+            </ul>
+            <p><a href="mailto:brandon@example.com">Contact Brandon →</a></p>
         </section>
     </main>
+
+    <footer>
+        <p>© 2025 Living Chicago Suburbs | Brandon Blankenship, Realtor®</p>
+    </footer>
 
 </body>
 </html>
