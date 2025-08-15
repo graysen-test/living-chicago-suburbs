@@ -1,152 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glen Ellyn - Brandon Blankenship</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-        }
-        header {
-            background-color: #2ba6cb;
-            padding: 10px 0;
-        }
-        nav {
-            max-width: 1200px;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-            position: relative;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-        nav .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-        nav .dropdown-content {
-            display: none;
-            position: absolute;
-            left: 0;
-            background-color: white;
-            min-width: 600px;
-            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-            padding: 20px;
-            z-index: 1;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-        nav .dropdown-content a {
-            color: black;
-            display: block;
-            margin-bottom: 10px;
-            font-weight: normal;
-        }
-        nav .dropdown:hover .dropdown-content {
-            display: grid;
-        }
-        nav .dropdown-content strong {
-            display: block;
-            margin-bottom: 10px;
-            color: #555;
-        }
-        .hero {
-            background-color: #ddd;
-            text-align: center;
-            padding: 50px 20px;
-        }
-        .hero img {
-            width: 100%;
-            max-height: 400px;
-            object-fit: cover;
-        }
-        .content {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
-            background-color: white;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            margin-top: -40px;
-            position: relative;
-            z-index: 1;
-        }
-        footer {
-            background-color: #2ba6cb;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glen Ellyn - Living in the Chicago Suburbs</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+    }
+    /* Navbar */
+    .navbar {
+        background-color: #21a9d1;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px 15px;
+    }
+    .navbar a:hover {
+        background-color: #1b8db0;
+        border-radius: 4px;
+    }
+    /* Dropdown */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropbtn {
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-weight: bold;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 300px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+        padding: 15px;
+        z-index: 1;
+        left: 0;
+    }
+    .dropdown-content .column {
+        float: left;
+        width: 33%;
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 6px 0;
+        display: block;
+        text-decoration: none;
+    }
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown-content::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    /* Page Content */
+    .hero-image {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    .content {
+        max-width: 900px;
+        margin: 40px auto;
+        background: white;
+        padding: 20px;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        border-radius: 8px;
+    }
+    h1 {
+        color: black;
+    }
+    /* Footer */
+    footer {
+        background-color: #21a9d1;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 40px;
+    }
+</style>
 </head>
 <body>
 
-<header>
-    <nav>
-        <a href="index.html">About Brandon</a>
-        <div class="dropdown">
-            <a href="#">Suburbs ▼</a>
-            <div class="dropdown-content">
-                <div>
-                    <strong>Main Western Hubs</strong>
-                    <a href="naperville.html">Naperville</a>
-                    <a href="wheaton.html">Wheaton</a>
-                    <a href="downers-grove.html">Downers Grove</a>
-                    <a href="oak-brook.html">Oak Brook</a>
-                </div>
-                <div>
-                    <strong>DuPage County Gems</strong>
-                    <a href="glen-ellyn.html">Glen Ellyn</a>
-                    <a href="elmhurst.html">Elmhurst</a>
-                    <a href="lombard.html">Lombard</a>
-                    <a href="hinsdale.html">Hinsdale</a>
-                    <a href="lisle.html">Lisle</a>
-                </div>
-                <div>
-                    <strong>More Western Suburbs</strong>
-                    <a href="aurora.html">Aurora</a>
-                    <a href="geneva.html">Geneva</a>
-                    <a href="st-charles.html">St. Charles</a>
-                    <a href="west-chicago.html">West Chicago</a>
-                    <a href="warrenville.html">Warrenville</a>
-                    <a href="winfield.html">Winfield</a>
-                </div>
+<!-- Navbar -->
+<div class="navbar">
+    <a href="about.html">About Brandon</a>
+    <div class="dropdown">
+        <button class="dropbtn">Suburbs ▼</button>
+        <div class="dropdown-content">
+            <div class="column">
+                <strong>Main Western Hubs</strong>
+                <a href="naperville.html">Naperville</a>
+                <a href="wheaton.html">Wheaton</a>
+                <a href="downers-grove.html">Downers Grove</a>
+            </div>
+            <div class="column">
+                <strong>DuPage County Gems</strong>
+                <a href="glen-ellyn.html">Glen Ellyn</a>
+                <a href="elmhurst.html">Elmhurst</a>
+                <a href="oak-brook.html">Oak Brook</a>
+                <a href="hinsdale.html">Hinsdale</a>
+                <a href="lisle.html">Lisle</a>
+            </div>
+            <div class="column">
+                <strong>More Western Suburbs</strong>
+                <a href="aurora.html">Aurora</a>
+                <a href="#">Geneva</a>
+                <a href="#">St. Charles</a>
+                <a href="#">West Chicago</a>
+                <a href="#">Bolingbrook</a>
             </div>
         </div>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+    </div>
+    <a href="contact.html">Contact</a>
+</div>
 
-<section class="hero">
-    <img src="https://source.unsplash.com/1200x400/?glen-ellyn" alt="Glen Ellyn">
-</section>
+<!-- Hero Image -->
+<img class="hero-image" src="https://source.unsplash.com/1600x900/?glen-ellyn,illinois" alt="Glen Ellyn">
 
-<section class="content">
+<!-- Content -->
+<div class="content">
     <h1>Welcome to Glen Ellyn</h1>
-    <p>
-        Glen Ellyn is a charming village in DuPage County, Illinois, known for its tree-lined streets,
-        historic downtown, and vibrant community atmosphere. With a blend of historic architecture
-        and modern amenities, Glen Ellyn offers a perfect balance of suburban comfort and city accessibility.
-    </p>
-    <p>
-        From its scenic Lake Ellyn to the bustling shops and restaurants along Main Street,
-        Glen Ellyn offers residents and visitors a warm and welcoming experience year-round.
-    </p>
-</section>
+    <p>Glen Ellyn is a charming village in DuPage County, Illinois, known for its tree-lined streets, historic downtown, and vibrant community atmosphere. With a blend of historic architecture and modern amenities, Glen Ellyn offers a perfect balance of suburban comfort and city accessibility.</p>
+    <p>From its scenic Lake Ellyn to the bustling shops and restaurants along Main Street, Glen Ellyn offers residents and visitors a warm and welcoming experience year-round.</p>
+</div>
 
+<!-- Footer -->
 <footer>
-    <p>Contact Brandon Blankenship — Your Local Real Estate Expert</p>
-    <p>Email: example@email.com | Phone: (555) 555-5555</p>
+    Contact Brandon Blankenship — Your Local Real Estate Expert<br>
+    Email: example@email.com | Phone: (555) 555-5555
 </footer>
 
 </body>
