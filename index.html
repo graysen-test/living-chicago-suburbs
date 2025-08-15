@@ -1,282 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About Brandon Blankenship | Living Chicago Suburbs</title>
-  <meta name="description" content="Meet Brandon Blankenship — an approachable, nationally recognized realtor with deep roots in Glen Ellyn and the western suburbs of Chicago." />
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Living Chicago Suburbs | About Brandon</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Museo+Slab:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --brand-blue:#41b6e6;
-      --brand-red:#e4002b;
-      --ink:#222;
-      --muted:#6b7280;
-      --panel:#ffffff;
-      --bg:#f4f7fb;
+    body {
+      font-family: 'Museo Slab', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
     }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:#ffffff;color:var(--ink)}
-    body{font-family:'Open Sans',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; line-height:1.6}
-
-    /* NAV */
-    .nav{
-      position:sticky; top:0; z-index:1000;
-      background:var(--brand-blue);
-      box-shadow:0 2px 10px rgba(0,0,0,.06);
+    header {
+      background-color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-    .nav .wrap{
-      max-width:1200px; margin:0 auto; padding:10px 20px;
-      display:flex; align-items:center; justify-content:space-between; gap:16px;
+    header img.logo {
+      height: 60px;
     }
-    .brand{display:flex; align-items:center; gap:12px}
-    .brand img{height:40px; width:auto; display:block}
-    .brand-name{font-family:'Montserrat',sans-serif; font-weight:700; color:#fff; letter-spacing:.2px}
-
-    .menu{list-style:none; margin:0; padding:0; display:flex; align-items:center; gap:10px}
-    .menu > li{position:relative}
-    .menu a{
-      color:#fff; text-decoration:none; padding:8px 12px; border-radius:8px; display:block;
-      font-weight:600
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
     }
-    .menu a:hover{background:rgba(255,255,255,.15)}
-
-    /* Dropdown */
-    .dropdown > a::after{content:"▾"; margin-left:6px; font-size:.9em}
-    .dropdown-panel{
-      position:absolute; left:50%; transform:translateX(-50%);
-      top:calc(100% + 10px);
-      background:#fff; color:var(--ink);
-      border-radius:14px; padding:14px; min-width:720px; max-width:90vw;
-      box-shadow:0 14px 40px rgba(2,8,20,.18);
-      display:none;
+    nav ul li {
+      position: relative;
+      margin-left: 20px;
     }
-    .dropdown:hover .dropdown-panel{display:block}
-    .dropdown-grid{
-      display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px;
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
     }
-    .drop-col h4{
-      margin:.25rem 0 .5rem 0; font-family:'Montserrat',sans-serif; font-size:.95rem; color:var(--muted); letter-spacing:.3px; text-transform:uppercase
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      background-color: white;
+      list-style: none;
+      padding: 10px 0;
+      margin: 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      min-width: 200px;
     }
-    .drop-col a{
-      color:var(--ink); padding:8px 10px; border-radius:8px;
+    nav ul li:hover ul {
+      display: block;
     }
-    .drop-col a:hover{background:#f3f6f9}
-
-    /* HERO */
-    .hero{
-      background: radial-gradient(1200px 600px at 10% 10%, #f0f8fd 0%, #ffffff 60%) ;
-      padding:56px 20px 36px;
+    nav ul li ul li {
+      margin: 0;
     }
-    .hero .wrap{
-      max-width:1200px; margin:0 auto; display:grid; gap:36px;
-      grid-template-columns: 1fr 1.2fr; align-items:center;
+    nav ul li ul li a {
+      display: block;
+      padding: 8px 15px;
+      color: black;
+      white-space: nowrap;
     }
-    .headshot{
-      width:100%; max-width:420px; border-radius:18px; overflow:hidden;
-      box-shadow:0 18px 50px rgba(2,8,20,.12);
-      background:#fff
+    nav ul li ul li a:hover {
+      background-color: #f0f0f0;
     }
-    .headshot img{display:block; width:100%; height:auto}
-    .intro h1{
-      font-family:'Montserrat',sans-serif; font-weight:700; margin:0 0 10px; font-size:2.2rem; color:#0f172a
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     }
-    .kicker{
-      color:var(--muted); margin-bottom:12px; font-weight:600; letter-spacing:.2px
+    .about-container {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
     }
-    .intro p{margin:0 0 10px}
-    .highlight{border-left:4px solid var(--brand-blue); padding-left:12px}
-
-    /* STATS */
-    .stats{
-      max-width:1100px; margin:22px auto 6px; padding:0 20px;
-      display:grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap:18px;
+    .about-container img {
+      width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-    .card{
-      background:var(--panel); border-radius:14px; padding:18px 16px;
-      box-shadow:0 10px 30px rgba(2,8,20,.06); text-align:center
+    .about-text {
+      flex: 1;
     }
-    .card h3{
-      font-family:'Montserrat',sans-serif; margin:0; font-size:2rem; color:#0f172a
+    .about-text h1 {
+      color: #41b6e6;
     }
-    .card p{margin:6px 0 0; color:var(--muted); font-weight:600}
-    .accent{
-      height:3px; width:36px; margin:10px auto 12px; border-radius:2px; background:var(--brand-red)
+    .about-text p {
+      line-height: 1.6;
+      font-size: 1.1rem;
     }
-
-    /* SECTION DIVIDER */
-    .section{
-      max-width:1100px; margin:34px auto 0; padding:0 20px 30px;
-    }
-    .section h2{
-      font-family:'Montserrat',sans-serif; font-size:1.4rem; margin:0 0 10px; color:#0f172a
-    }
-    .section p{margin:0; color:#374151}
-
-    /* FOOTER */
-    footer{
-      margin-top:40px; background:var(--bg); color:#4b5563; padding:24px 20px; text-align:center; font-size:.95rem
-    }
-
-    /* Responsive */
-    @media (max-width: 980px){
-      .hero .wrap{grid-template-columns:1fr; text-align:center}
-      .headshot{margin:0 auto}
-      .intro .highlight{border-left:none; padding-left:0}
-      .stats{grid-template-columns:1fr; gap:14px}
-      .dropdown-panel{left:50%; transform:translateX(-50%); min-width:300px}
-      .dropdown-grid{grid-template-columns:1fr}
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #41b6e6;
+      color: white;
+      margin-top: 40px;
     }
   </style>
-
-  <!-- JSON-LD Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "RealEstateAgent",
-    "name": "Brandon Blankenship",
-    "url": "https://graysen-test.github.io/living-chicago-suburbs/",
-    "image": "https://graysen-test.github.io/living-chicago-suburbs/brandon.JPG",
-    "brand": {
-      "@type": "Brand",
-      "name": "Living Chicago Suburbs",
-      "logo": "https://graysen-test.github.io/living-chicago-suburbs/logo.png"
-    },
-    "areaServed": [
-      "DuPage County, IL",
-      "Western Suburbs of Chicago",
-      "Glen Ellyn, IL",
-      "Wheaton, IL",
-      "Naperville, IL",
-      "Downers Grove, IL",
-      "Oak Brook, IL",
-      "Elmhurst, IL",
-      "Hinsdale, IL",
-      "Lisle, IL",
-      "Lombard, IL"
-    ],
-    "award": ["30 Under 30 (National real estate recognition)"],
-    "description": "Approachable community expert and top-producing realtor specializing in Chicago's western suburbs.",
-    "knowsAbout": ["DuPage County schools", "single-family homes", "move-up buyers", "first-time buyers", "luxury listings"],
-    "founder": {
-      "@type": "Person",
-      "name": "Brandon Blankenship"
-    },
-    "makesOffer": {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "Residential real estate representation"
-      }
-    },
-    "sameAs": [
-      "https://www.instagram.com/CLS", 
-      "https://www.zillow.com/profile/", 
-      "https://www.linkedin.com/"
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "reviewCount": "169"
-    }
-  }
-  </script>
 </head>
 <body>
 
-  <!-- NAV -->
-  <header class="nav" role="navigation" aria-label="Primary">
-    <div class="wrap">
-      <a class="brand" href="index.html" aria-label="Living Chicago Suburbs Home">
-        <img src="logo.png" alt="Living Chicago Suburbs logo" />
-        <span class="brand-name">Living Chicago Suburbs</span>
-      </a>
+<header>
+  <img src="logo.png" alt="Living Chicago Suburbs Logo" class="logo">
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#">Suburbs</a>
+        <ul>
+          <li><a href="glen-ellyn.html">Glen Ellyn</a></li>
+          <li><a href="naperville.html">Naperville</a></li>
+          <li><a href="wheaton.html">Wheaton</a></li>
+          <li><a href="downers-grove.html">Downers Grove</a></li>
+          <li><a href="oak-brook.html">Oak Brook</a></li>
+          <li><a href="elmhurst.html">Elmhurst</a></li>
+          <li><a href="hinsdale.html">Hinsdale</a></li>
+          <li><a href="lisle.html">Lisle</a></li>
+          <li><a href="aurora.html">Aurora</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-      <ul class="menu">
-        <li><a href="index.html">About Brandon</a></li>
-        <li class="dropdown">
-          <a href="#" aria-haspopup="true" aria-expanded="false">Suburbs</a>
-          <div class="dropdown-panel" role="menu">
-            <div class="dropdown-grid">
-              <div class="drop-col">
-                <h4>Main Western Hubs</h4>
-                <a href="naperville.html">Naperville</a>
-                <a href="wheaton.html">Wheaton</a>
-                <a href="downers-grove.html">Downers Grove</a>
-                <a href="oak-brook.html">Oak Brook</a>
-              </div>
-              <div class="drop-col">
-                <h4>DuPage County Gems</h4>
-                <a href="glen-ellyn.html">Glen Ellyn</a>
-                <a href="elmhurst.html">Elmhurst</a>
-                <a href="lombard.html">Lombard</a>
-                <a href="hinsdale.html">Hinsdale</a>
-                <a href="lisle.html">Lisle</a>
-              </div>
-              <div class="drop-col">
-                <h4>More Western Suburbs</h4>
-                <a href="aurora.html">Aurora</a>
-                <a href="geneva.html">Geneva</a>
-                <a href="st-charles.html">St. Charles</a>
-                <a href="west-chicago.html">West Chicago</a>
-                <a href="warrenville.html">Warrenville</a>
-                <a href="winfield.html">Winfield</a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+<main>
+  <div class="about-container">
+    <img src="brandon.JPG" alt="Brandon Blankenship Headshot">
+    <div class="about-text">
+      <h1>Meet Brandon Blankenship</h1>
+      <p>Brandon Blankenship is one of the Western Suburbs’ most trusted and accomplished real estate professionals. Born and raised in Glen Ellyn, Brandon offers clients a deep, first-hand understanding of the area’s communities, schools, and lifestyle.</p>
+      <p>Named to the prestigious <strong>30 Under 30</strong> by the National Association of REALTORS®, Brandon has closed <strong>169 sales totaling $68.6 million</strong> over the past five years, representing homes up to <strong>$1.7 million</strong>. With over <strong>90,000 Instagram followers</strong> on his Living Chicago Suburbs platform, his reach and expertise extend far beyond the local market.</p>
+      <p>Whether you’re buying your first home, upgrading, or relocating, Brandon combines local knowledge, top-tier marketing, and skilled negotiation to help you achieve your goals.</p>
     </div>
-  </header>
+  </div>
+</main>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="wrap">
-      <figure class="headshot">
-        <img src="brandon.JPG" alt="Brandon Blankenship" />
-      </figure>
+<footer>
+  <p>&copy; 2025 Living Chicago Suburbs. All rights reserved.</p>
+</footer>
 
-      <div class="intro">
-        <p class="kicker">Approachable community expert • Western Suburbs of Chicago</p>
-        <h1>Meet Brandon Blankenship</h1>
-        <p class="highlight">Born and raised in Glen Ellyn, Brandon blends deep local insight with nationally recognized results. Clients appreciate his calm, proactive style and the way he translates neighborhood nuance into smart decisions.</p>
-        <p>Whether you’re buying your first home, moving up, or preparing to sell, Brandon’s hands-on guidance keeps every step clear, timely, and stress-light — while protecting your time and goals.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- STATS -->
-  <section class="stats" aria-label="Performance highlights">
-    <article class="card">
-      <div class="accent" aria-hidden="true"></div>
-      <h3>169</h3>
-      <p>Homes Sold (5 Years)</p>
-    </article>
-    <article class="card">
-      <div class="accent" aria-hidden="true"></div>
-      <h3>$68.6M</h3>
-      <p>Total Sales Volume</p>
-    </article>
-    <article class="card">
-      <div class="accent" aria-hidden="true"></div>
-      <h3>Top 30 Under 30</h3>
-      <p>National Recognition</p>
-    </article>
-  </section>
-
-  <!-- ABOUT BLURB -->
-  <section class="section">
-    <h2>Why Clients Choose Brandon</h2>
-    <p>Timely communication, reliable follow-through, and proactive problem-solving. Brandon is known for anticipating next steps, simplifying choices, and negotiating with precision — always with respect for your time.</p>
-  </section>
-
-  <footer>
-    © 2025 Living Chicago Suburbs • Brandon Blankenship, Realtor®
-  </footer>
 </body>
 </html>
