@@ -2,123 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Elmhurst, IL Guide – Living Chicago Suburbs</title>
-  <meta name="description" content="Elmhurst guide by Brandon Blankenship: neighborhoods, schools, parks, housing market, and insider tips from a local expert." />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Living Chicago Suburbs | Elmhurst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Museo+Slab:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --brand-blue: #41b6e6;
-      --brand-red: #e4002b;
-      --text: #333333;
-      --muted: #666666;
-      --bg: #ffffff;
-      --card-bg: #f7f9fb;
-    }
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: 'Roboto Slab', serif; color: var(--text); background: var(--bg); line-height: 1.6; }
-    header, footer { text-align: center; padding: 20px; }
-    header img { max-width: 280px; height: auto; display: block; margin: 0 auto 10px; }
-    h1 { color: var(--brand-blue); margin: 6px 0; font-size: 2rem; }
-    nav {
-  background: var(--brand-blue);
-  padding: 14px 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-family: 'Museo Slab', serif;
-  font-size: 1rem;
-  letter-spacing: 0.5px;
-  transition: all 0.2s ease-in-out;
-}
-
-nav a:hover {
-  text-decoration: underline;
-  color: #f0e6d6;
-}
-    main { max-width: 900px; margin: 20px auto; padding: 0 16px; }
-    h2 { color: var(--brand-blue); margin-top: 28px; }
-    .note { color: var(--muted); font-size: 0.95rem; }
-    .pill { display: inline-block; background: var(--card-bg); border: 1px solid #e9eef3; border-radius: 999px; padding: 6px 12px; margin: 4px 6px 0 0; font-size: 0.95rem; }
-    ul { padding-left: 20px; }
-    footer { background: #f4f6f8; font-size: 0.92rem; color: var(--muted); }
+    body { font-family: 'Museo Slab', serif; margin: 0; padding: 0; background-color: #f8f8f8; }
+    header { background-color: white; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+    header img.logo { height: 60px; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; }
+    nav ul li { position: relative; margin-left: 20px; }
+    nav ul li a { text-decoration: none; color: black; font-weight: bold; }
+    nav ul li ul { display: none; position: absolute; left: 0; top: 100%; background-color: white; list-style: none; padding: 10px 0; margin: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1); min-width: 200px; }
+    nav ul li:hover ul { display: block; }
+    nav ul li ul li a { display: block; padding: 8px 15px; color: black; white-space: nowrap; }
+    nav ul li ul li a:hover { background-color: #f0f0f0; }
+    main { max-width: 1200px; margin: 40px auto; padding: 20px; background-color: white; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+    main h1 { color: #41b6e6; margin-bottom: 20px; }
+    main h2 { margin-top: 30px; color: #333; }
+    main p, main li { line-height: 1.6; font-size: 1.1rem; }
+    footer { text-align: center; padding: 20px; background-color: #41b6e6; color: white; margin-top: 40px; }
   </style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Living Chicago Suburbs Logo">
-    <h1>Elmhurst, Illinois</h1>
-    <p class="note">Western Suburbs of Chicago • DuPage County</p>
-  </header>
 
+<header>
+  <img src="logo.png" alt="Living Chicago Suburbs Logo" class="logo" />
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="naperville.html">Naperville</a></li>
-      <li><a href="wheaton.html">Wheaton</a></li>
-      <li><a href="downers-grove.html">Downers Grove</a></li>
-      <li><a href="oak-brook.html">Oak Brook</a></li>
+      <li>
+        <a href="#">Suburbs</a>
+        <ul>
+          <li><a href="glen-ellyn.html">Glen Ellyn</a></li>
+          <li><a href="naperville.html">Naperville</a></li>
+          <li><a href="wheaton.html">Wheaton</a></li>
+          <li><a href="downers-grove.html">Downers Grove</a></li>
+          <li><a href="oak-brook.html">Oak Brook</a></li>
+          <li><a href="elmhurst.html">Elmhurst</a></li>
+          <li><a href="hinsdale.html">Hinsdale</a></li>
+          <li><a href="lisle.html">Lisle</a></li>
+          <li><a href="aurora.html">Aurora</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
+</header>
 
-  <main>
-    <section>
-      <h2>Why Elmhurst?</h2>
-      <p>Elmhurst combines suburban charm with urban convenience. Its vibrant downtown is filled with boutiques, restaurants, and coffee shops, all set against a backdrop of tree-lined streets and beautiful parks. A commuter’s dream, Elmhurst is only about 20 minutes by train to downtown Chicago, making it a top choice for professionals and families. (<a href="https://www.reddit.com/r/ElmhurstIL/" target="_blank">reddit.com</a>)</p>
-    </section>
+<main>
+  <h1>Elmhurst</h1>
+  <p>Elmhurst is a bustling suburb located about 17 miles west of Chicago, known for its beautiful tree-lined streets, strong sense of community, and thriving arts scene.</p>
 
-    <section>
-      <h2>Key Neighborhoods</h2>
-      <div>
-        <span class="pill">Downtown Elmhurst</span>
-        <span class="pill">Crescent Park</span>
-        <span class="pill">Cherry Farm</span>
-        <span class="pill">College View</span>
-        <span class="pill">South Elmhurst</span>
-      </div>
-      <ul>
-        <li><strong>Downtown:</strong> Walkable, lively, and close to Metra access.</li>
-        <li><strong>Crescent Park:</strong> Known for its larger homes and beautiful landscaping.</li>
-        <li><strong>College View:</strong> Popular for its charming homes and proximity to Elmhurst College.</li>
-      </ul>
-    </section>
+  <h2>Community & Lifestyle</h2>
+  <p>Residents enjoy a mix of historic charm and modern convenience, with a vibrant downtown featuring boutiques, restaurants, and cultural attractions such as the Elmhurst Art Museum.</p>
 
-    <section>
-      <h2>Schools & Community Feel</h2>
-      <p>Elmhurst schools are part of District 205, recognized for academic excellence, competitive sports programs, and active parent involvement. The city fosters a strong sense of community through local events like the St. Patrick’s Day Parade, art fairs, and summer concerts in the park. (<a href="https://www.reddit.com/r/ElmhurstIL/comments/f2x6d4" target="_blank">reddit.com</a>)</p>
-    </section>
+  <h2>Schools</h2>
+  <p>Elmhurst is served by District 205, which is highly rated for academic performance and extracurricular opportunities.</p>
 
-    <section>
-      <h2>Home Market Snapshot</h2>
-      <p>The median listing price in Elmhurst is around <strong>$600K</strong>, with renovated homes and new construction fetching premium prices. Demand remains strong thanks to the city’s location, schools, and amenities. (<a href="https://www.realtor.com/realestateandhomes-search/Elmhurst_IL/overview" target="_blank">realtor.com</a>)</p>
-    </section>
+  <h2>Real Estate</h2>
+  <p>The housing market includes charming bungalows, mid-century homes, and newer luxury builds, appealing to families and professionals alike.</p>
 
-    <section>
-      <h2>Local Tips from Brandon</h2>
-      <ul>
-        <li>Downtown properties are ideal for buyers wanting walkability and quick Metra access.</li>
-        <li>Cherry Farm and Crescent Park have some of the most sought-after lots in town.</li>
-        <li>New builds in South Elmhurst offer modern amenities at a more competitive price point than comparable north side homes.</li>
-      </ul>
-    </section>
-  </main>
+  <h2>Things to Do</h2>
+  <ul>
+    <li>Visit the Elmhurst Art Museum</li>
+    <li>Relax at Wilder Park</li>
+    <li>Shop and dine in downtown Elmhurst</li>
+    <li>Attend community festivals throughout the year</li>
+  </ul>
+</main>
 
-  <footer>
-    © 2025 Living Chicago Suburbs | Brandon Blankenship, Realtor®
-  </footer>
+<footer>
+  <p>&copy; 2025 Living Chicago Suburbs. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
