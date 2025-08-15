@@ -1,6 +1,30 @@
-<nav style="background-color: #41b6e6; padding: 1rem; display: flex; justify-content: center; gap: 2rem; font-family: 'Museo Slab', serif; font-weight: 500;">
-  <a href="index.html" style="color: white; text-decoration: none;">Home</a>
-  <a href="glen-ellyn.html" style="color: white; text-decoration: none;">Glen Ellyn</a>
-  <a href="naperville.html" style="color: white; text-decoration: none;">Naperville</a>
-  <a href="contact.html" style="color: white; text-decoration: none;">Contact</a>
-</nav>
+nav {
+  background: var(--brand-blue);
+  padding: 14px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Museo Slab', serif;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #f0e6d6;
+}
