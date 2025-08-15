@@ -1,160 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Glen Ellyn | Living Chicago Suburbs</title>
-  <style>
-    body {
-      font-family: 'Museo Slab', serif;
-      margin: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    /* Header Nav */
-    header {
-      background: white;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 15px 20px;
-    }
-    .nav a {
-      color: #333;
-      text-decoration: none;
-      font-weight: bold;
-      margin-left: 20px;
-      position: relative;
-    }
-    .nav a:hover {
-      color: #41b6e6;
-    }
-    .dropdown:hover .dropdown-menu {
-      display: block;
-    }
-    .dropdown-menu {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background: white;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      padding: 20px;
-      white-space: nowrap;
-    }
-    .dropdown-menu div {
-      display: inline-block;
-      vertical-align: top;
-      margin-right: 40px;
-    }
-    .dropdown-menu strong {
-      display: block;
-      margin-bottom: 10px;
-      color: #555;
-    }
-    .dropdown-menu a {
-      color: #333;
-      display: block;
-      margin-bottom: 6px;
-      text-decoration: none;
-    }
-    .dropdown-menu a:hover {
-      color: #41b6e6;
-    }
-    /* Main Card */
-    .card {
-      display: flex;
-      max-width: 1000px;
-      margin: 60px auto;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-      overflow: hidden;
-    }
-    .card img {
-      width: 50%;
-      object-fit: cover;
-    }
-    .card-content {
-      padding: 40px;
-      width: 50%;
-    }
-    .card-content h1 {
-      margin-top: 0;
-      color: #41b6e6;
-    }
-    .card-content p {
-      line-height: 1.6;
-    }
-    /* Footer */
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #888;
-      margin: 60px auto 0;
-      padding-bottom: 40px;
-    }
-  </style>
-  <link href="https://fonts.googleapis.com/css2?family=Museo+Slab&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glen Ellyn - Living in the Chicago Suburbs</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-  <nav class="nav">
-    <a href="index.html">About Brandon</a>
-    <div class="dropdown">
-      <a href="#">Suburbs ▼</a>
-      <div class="dropdown-menu">
-        <div>
-          <strong>Main Western Hubs</strong>
-          <a href="naperville.html">Naperville</a>
-          <a href="wheaton.html">Wheaton</a>
-          <a href="downers-grove.html">Downers Grove</a>
-          <a href="oak-brook.html">Oak Brook</a>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <a href="/living-chicago-suburbs/index.html"><img src="logo.png" alt="Living Chicago Suburbs Logo"></a>
         </div>
-        <div>
-          <strong>DuPage County Gems</strong>
-          <a href="glen-ellyn.html">Glen Ellyn</a>
-          <a href="elmhurst.html">Elmhurst</a>
-          <a href="hinsdale.html">Hinsdale</a>
-          <a href="lisle.html">Lisle</a>
+        <ul>
+            <li><a href="/living-chicago-suburbs/index.html">Home</a></li>
+            <li><a href="/living-chicago-suburbs/index.html">About</a></li>
+            <li class="dropdown">
+                <a href="#">Suburbs</a>
+                <ul class="dropdown-content">
+                    <li><a href="glen-ellyn.html">Glen Ellyn</a></li>
+                    <li><a href="naperville.html">Naperville</a></li>
+                    <li><a href="wheaton.html">Wheaton</a></li>
+                    <li><a href="oak-brook.html">Oak Brook</a></li>
+                    <li><a href="hinsdale.html">Hinsdale</a></li>
+                    <li><a href="downers-grove.html">Downers Grove</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <img src="glen-ellyn-placeholder.jpg" alt="Glen Ellyn Town View" class="hero-image">
+        <div class="hero-text">
+            <h1>Living in Glen Ellyn</h1>
+            <p>The charm of a small town with big city conveniences just a train ride away.</p>
         </div>
-        <div>
-          <strong>More Western Suburbs</strong>
-          <a href="aurora.html">Aurora</a>
-          <a href="geneva.html">Geneva</a>
-          <a href="st-charles.html">St. Charles</a>
-          <a href="west-chicago.html">West Chicago</a>
-          <a href="warrenville.html">Warrenville</a>
-          <a href="winfield.html">Winfield</a>
-        </div>
-      </div>
-    </div>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+    </header>
 
-<div class="card">
-  <img src="https://source.unsplash.com/800x1000/?glenellyn-waterfront" alt="Glen Ellyn">
-  <div class="card-content">
-    <h1>Welcome to Glen Ellyn</h1>
-    <p>Glen Ellyn is the “Village of Volunteers,” known for its tree-full streets, historic downtown, Lake Ellyn, and close-knit community feel — all within a stone’s throw of Chicago.</p>
-    <p>With its walkable downtown, favorite local eateries, and local events like the Fourth of July parade and Friday farmers’ market, Glen Ellyn brings that small-town warmth your clients will love.</p>
-  </div>
-</div>
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2>About Glen Ellyn</h2>
+            <p>
+                Glen Ellyn is known for its charming downtown, beautiful parks, and strong sense of community. 
+                Residents enjoy a mix of historic homes, modern conveniences, and top-rated schools. 
+                The village offers plenty of recreational activities, from boating at Lake Ellyn to browsing 
+                boutiques and cafes in the heart of town.
+            </p>
+        </section>
 
-<footer>
-  Contact Brandon Blankenship — Your Local Real Estate Expert<br>
-  Email: brandonblankenship@example.com | Phone: (630) 923-9535
-</footer>
+        <section>
+            <h2>Community Highlights</h2>
+            <ul>
+                <li>Population: ~28,000</li>
+                <li>Top-Rated Schools in District 41 & 87</li>
+                <li>Metra Access to Downtown Chicago</li>
+                <li>Lake Ellyn Park and Village Links Golf Course</li>
+                <li>Vibrant Downtown with Local Shops & Restaurants</li>
+            </ul>
+        </section>
 
+        <section>
+            <h2>Why Brandon Loves Glen Ellyn</h2>
+            <p>
+                Brandon was born and raised in Glen Ellyn, giving him a true insider’s perspective. 
+                He knows every street, every coffee shop, and every hidden gem — knowledge that gives 
+                his clients a unique advantage when buying or selling here.
+            </p>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <h2>Contact Brandon</h2>
+            <p>If you're interested in learning more about Glen Ellyn or finding your dream home here, reach out to Brandon below.</p>
+            <a href="contact.html" class="contact-button">Get in Touch</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Living in the Chicago Suburbs. All rights reserved.</p>
+    </footer>
 </body>
 </html>
