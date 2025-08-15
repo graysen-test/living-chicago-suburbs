@@ -25,31 +25,12 @@
   padding: 14px 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-family: 'Museo Slab', serif;
-  font-size: 1rem;
-  letter-spacing: 0.5px;
-  transition: all 0.2s ease-in-out;
-}
-
-nav a:hover {
-  text-decoration: underline;
-  color: #f0e6d6;
-}
+<div id="navbar"></div>
+<script>
+fetch('navbar.html')
+  .then(response => response.text())
+  .then(data => document.getElementById('navbar').innerHTML = data);
+</script>
     main { max-width: 900px; margin: 20px auto; padding: 0 16px; }
     h2 { color: var(--brand-blue); margin-top: 28px; }
     .note { color: var(--muted); font-size: 0.95rem; }
