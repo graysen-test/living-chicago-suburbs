@@ -1,125 +1,142 @@
-@import url('https://fonts.googleapis.com/css2?family=Museo+Slab:wght@400;600;700&display=swap');
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Living Chicago Suburbs – Brandon Blankenship</title>
-  <meta name="description" content="Discover Chicago's western suburbs with Brandon Blankenship – local guides, real estate insights, and community highlights." />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --brand-blue: #41b6e6;
-      --brand-red: #e4002b;
-      --text: #333333;
-      --muted: #666666;
-      --bg: #ffffff;
-      --card-bg: #f7f9fb;
-    }
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: 'Roboto Slab', serif; color: var(--text); background: var(--bg); line-height: 1.6; }
-    header, footer { text-align: center; padding: 20px; }
-    header img { max-width: 280px; height: auto; display: block; margin: 0 auto 10px; }
-    h1 { color: var(--brand-blue); margin: 6px 0; font-size: 2rem; }
-    nav {
-  background: var(--brand-blue);
-  padding: 14px 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-family: 'Museo Slab', serif;
-  font-size: 1rem;
-  letter-spacing: 0.5px;
-  transition: all 0.2s ease-in-out;
-}
-
-nav a:hover {
-  text-decoration: underline;
-  color: #f0e6d6;
-}
-    main { max-width: 1100px; margin: 20px auto; padding: 0 16px; }
-    h2 { color: var(--brand-blue); margin-top: 28px; }
-    .suburbs-grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-    .suburb-card { background: var(--card-bg); padding: 16px; flex: 1 1 calc(33% - 20px); max-width: 320px; border-radius: 8px; text-align: center; border: 1px solid #e9eef3; }
-    .suburb-card h3 { margin-top: 0; color: var(--brand-red); }
-    .suburb-card a { text-decoration: none; color: var(--brand-blue); font-weight: bold; }
-    footer { background: #f4f6f8; font-size: 0.92rem; color: var(--muted); }
-    @media (max-width: 768px) {
-      .suburb-card { flex: 1 1 100%; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Brandon Blankenship - Living Chicago Suburbs</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 1px solid #eaeaea;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+            color: #333;
+        }
+        nav a:hover {
+            color: #0077b6;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+        }
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        .about-photo {
+            flex: 1;
+            text-align: center;
+            min-width: 300px;
+        }
+        .about-photo img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+        }
+        .stats {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        .stat {
+            flex: 1;
+            min-width: 200px;
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        .stat h3 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+            color: #0077b6;
+        }
+        .stat p {
+            margin: 0;
+            font-weight: 500;
+            color: #555;
+        }
+        footer {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #eaeaea;
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Living Chicago Suburbs Logo">
-    <h1>Living Chicago Suburbs</h1>
-    <p class="note">Guides & Insights from Brandon Blankenship, Your Local Real Estate Expert</p>
-  </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="naperville.html">Naperville</a></li>
-      <li><a href="wheaton.html">Wheaton</a></li>
-      <li><a href="glen-ellyn.html">Glen Ellyn</a></li>
-      <li><a href="elmhurst.html">Elmhurst</a></li>
-      <li><a href="downers-grove.html">Downers Grove</a></li>
-      <li><a href="oak-brook.html">Oak Brook</a></li>
-    </ul>
-  </nav>
+    <header>
+        <img src="logo.png" alt="Living Chicago Suburbs × Blankenship" style="max-height: 70px;">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="glen-ellyn.html">Glen Ellyn</a>
+            <a href="wheaton.html">Wheaton</a>
+            <a href="naperville.html">Naperville</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-  <main>
-    <h2>Explore the Suburbs</h2>
-    <div class="suburbs-grid">
-      <div class="suburb-card">
-        <h3>Naperville</h3>
-        <p>Family-friendly living, top schools, and a vibrant downtown.</p>
-        <a href="naperville.html">View Guide</a>
-      </div>
-      <div class="suburb-card">
-        <h3>Wheaton</h3>
-        <p>Charming historic homes, parks, and a strong sense of community.</p>
-        <a href="wheaton.html">View Guide</a>
-      </div>
-      <div class="suburb-card">
-        <h3>Glen Ellyn</h3>
-        <p>Small-town charm with big amenities and a connected community.</p>
-        <a href="glen-ellyn.html">View Guide</a>
-      </div>
-      <div class="suburb-card">
-        <h3>Elmhurst</h3>
-        <p>Upscale living, excellent schools, and a thriving arts scene.</p>
-        <a href="elmhurst.html">View Guide</a>
-      </div>
-      <div class="suburb-card">
-        <h3>Downers Grove</h3>
-        <p>A mix of historic charm and modern conveniences.</p>
-        <a href="downers-grove.html">View Guide</a>
-      </div>
-      <div class="suburb-card">
-        <h3>Oak Brook</h3>
-        <p>Luxury homes, world-class shopping, and premier golf.</p>
-        <a href="oak-brook.html">View Guide</a>
-      </div>
+    <div class="container">
+        <div class="about-section">
+            <div class="about-text">
+                <h1>About Brandon Blankenship</h1>
+                <p>Born and raised in Glen Ellyn, Brandon Blankenship offers his clients more than just real estate expertise — he brings a deep-rooted understanding of the western suburbs of Chicago. As an approachable community expert, Brandon combines local insight with market knowledge to help buyers and sellers make confident, informed decisions.</p>
+                <p>Over the years, Brandon has become one of the most trusted names in the area, recognized nationally for his accomplishments and dedication. Whether you’re buying your first home, upgrading, or selling, Brandon ensures the process feels seamless — and maybe even a little fun.</p>
+                
+                <div class="stats">
+                    <div class="stat">
+                        <h3>30 Under 30</h3>
+                        <p>National recognition as a rising leader in real estate</p>
+                    </div>
+                    <div class="stat">
+                        <h3>169 Sales</h3>
+                        <p>Totaling $68.6M over the past five years</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Up to $1.7M</h3>
+                        <p>In single-home sales</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-photo">
+                <img src="brandon.jpg" alt="Brandon Blankenship">
+            </div>
+        </div>
     </div>
-  </main>
 
-  <footer>
-    © 2025 Living Chicago Suburbs | Brandon Blankenship, Realtor®
-  </footer>
+    <footer>
+        &copy; 2025 Living Chicago Suburbs × Blankenship. All rights reserved.
+    </footer>
+
 </body>
 </html>
