@@ -1,97 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Glen Ellyn - Living in the Chicago Suburbs</title>
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Glen Ellyn | Living Chicago Suburbs</title>
+  <style>
     body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f5f5f5;
+      font-family: 'Museo Slab', serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
     }
-    /* Navbar */
+    /* Header Nav */
     header {
-        background-color: white;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      background: white;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
-    .navbar {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding: 15px 40px;
-        font-weight: bold;
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 15px 20px;
     }
-    .navbar a {
-        margin-left: 20px;
-        color: black;
-        text-decoration: none;
+    .nav a {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      margin-left: 20px;
+      position: relative;
     }
-    .navbar a:hover {
-        color: #21a9d1;
+    .nav a:hover {
+      color: #41b6e6;
     }
-    /* Main Card Layout */
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      white-space: nowrap;
+    }
+    .dropdown-menu div {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 40px;
+    }
+    .dropdown-menu strong {
+      display: block;
+      margin-bottom: 10px;
+      color: #555;
+    }
+    .dropdown-menu a {
+      color: #333;
+      display: block;
+      margin-bottom: 6px;
+      text-decoration: none;
+    }
+    .dropdown-menu a:hover {
+      color: #41b6e6;
+    }
+    /* Main Card */
     .card {
-        display: flex;
-        max-width: 1100px;
-        margin: 60px auto;
-        background: white;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        overflow: hidden;
+      display: flex;
+      max-width: 1000px;
+      margin: 60px auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      overflow: hidden;
     }
     .card img {
-        width: 50%;
-        object-fit: cover;
+      width: 50%;
+      object-fit: cover;
     }
     .card-content {
-        padding: 40px;
-        width: 50%;
+      padding: 40px;
+      width: 50%;
     }
-    h1 {
-        color: #21a9d1;
-        margin-bottom: 20px;
+    .card-content h1 {
+      margin-top: 0;
+      color: #41b6e6;
     }
-    p {
-        line-height: 1.6;
-        color: #333;
+    .card-content p {
+      line-height: 1.6;
     }
     /* Footer */
     footer {
-        background-color: #21a9d1;
-        color: white;
-        text-align: center;
-        padding: 15px;
-        margin-top: 40px;
-        font-size: 14px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      margin: 60px auto 0;
+      padding-bottom: 40px;
     }
-</style>
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Museo+Slab&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Header / Navbar -->
 <header>
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="suburbs.html">Suburbs</a>
-        <a href="contact.html">Contact</a>
+  <nav class="nav">
+    <a href="index.html">About Brandon</a>
+    <div class="dropdown">
+      <a href="#">Suburbs ▼</a>
+      <div class="dropdown-menu">
+        <div>
+          <strong>Main Western Hubs</strong>
+          <a href="naperville.html">Naperville</a>
+          <a href="wheaton.html">Wheaton</a>
+          <a href="downers-grove.html">Downers Grove</a>
+          <a href="oak-brook.html">Oak Brook</a>
+        </div>
+        <div>
+          <strong>DuPage County Gems</strong>
+          <a href="glen-ellyn.html">Glen Ellyn</a>
+          <a href="elmhurst.html">Elmhurst</a>
+          <a href="hinsdale.html">Hinsdale</a>
+          <a href="lisle.html">Lisle</a>
+        </div>
+        <div>
+          <strong>More Western Suburbs</strong>
+          <a href="aurora.html">Aurora</a>
+          <a href="geneva.html">Geneva</a>
+          <a href="st-charles.html">St. Charles</a>
+          <a href="west-chicago.html">West Chicago</a>
+          <a href="warrenville.html">Warrenville</a>
+          <a href="winfield.html">Winfield</a>
+        </div>
+      </div>
     </div>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
-<!-- Main Content Card -->
 <div class="card">
-    <img src="https://source.unsplash.com/800x800/?glen-ellyn,illinois" alt="Glen Ellyn">
-    <div class="card-content">
-        <h1>Welcome to Glen Ellyn</h1>
-        <p>Glen Ellyn is a charming village in DuPage County, Illinois, known for its tree-lined streets, historic downtown, and vibrant community atmosphere. With a blend of historic architecture and modern amenities, Glen Ellyn offers a perfect balance of suburban comfort and city accessibility.</p>
-        <p>From its scenic Lake Ellyn to the bustling shops and restaurants along Main Street, Glen Ellyn offers residents and visitors a warm and welcoming experience year-round.</p>
-    </div>
+  <img src="https://source.unsplash.com/800x1000/?glenellyn-waterfront" alt="Glen Ellyn">
+  <div class="card-content">
+    <h1>Welcome to Glen Ellyn</h1>
+    <p>Glen Ellyn is the “Village of Volunteers,” known for its tree-full streets, historic downtown, Lake Ellyn, and close-knit community feel — all within a stone’s throw of Chicago.</p>
+    <p>With its walkable downtown, favorite local eateries, and local events like the Fourth of July parade and Friday farmers’ market, Glen Ellyn brings that small-town warmth your clients will love.</p>
+  </div>
 </div>
 
-<!-- Footer -->
 <footer>
-    © 2025 Living Chicago Suburbs. All rights reserved.
+  Contact Brandon Blankenship — Your Local Real Estate Expert<br>
+  Email: brandonblankenship@example.com | Phone: (630) 923-9535
 </footer>
 
 </body>
